@@ -1,0 +1,11 @@
+{% extends "orga/base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+    <legend class="csv-settings">
+        {% trans "CSV export settings" %}
+    </legend>
+    {{ url_name }}
+
+{% endblock content %}
