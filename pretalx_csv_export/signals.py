@@ -2,6 +2,7 @@ from django.dispatch import receiver
 from django.urls import resolve, reverse
 from django.utils.translation import ugettext_lazy as _
 
+from pretalx.common.signals import register_data_exporters
 from pretalx.orga.signals import nav_event
 
 
@@ -14,3 +15,9 @@ def navbar_info(sender, request, **kwargs):
         'url': reverse('plugins:pretalx_csv_export:settings', kwargs={'event': sender.slug}),
         'active': 'pretalx_csv_export' in url.namespace,
     }]
+
+
+@receiver(register_data_exporters, dispatch_uid="exporter_csv_submissions")
+def register_data_exporter(sender, **kwargs):
+    from .exporter import CSVExporter
+    return CSVExporter
