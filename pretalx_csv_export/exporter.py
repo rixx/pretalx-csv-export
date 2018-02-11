@@ -1,10 +1,16 @@
 import csv
 import io
 
+from pretalx.common.exporter import BaseExporter
 
-class CSVExporter:
-    pass
-    def render(self, form_data):
+
+class CSVExporter(BaseExporter):
+    identifier = 'CSV exporter'
+    verbose_name = 'Export all submissions into one CSV file'
+    icon = ''
+    public = False
+
+    def render(self, **kwargs):
         output = io.StringIO()
         writer = csv.writer(output, quoting=csv.QUOTE_NONNUMERIC, delimiter=',')
         submissions = list(self.event.submissions.all())
