@@ -5,9 +5,9 @@ from pretalx.common.exporter import BaseExporter
 
 
 class CSVExporter(BaseExporter):
-    identifier = 'CSV'
-    verbose_name = 'Export all submissions into one CSV file'
-    icon = ''
+    identifier = 'pretalx-csv-exporter'
+    verbose_name = 'CSV'
+    icon = '","'
     public = False
 
     def render(self, **kwargs):
