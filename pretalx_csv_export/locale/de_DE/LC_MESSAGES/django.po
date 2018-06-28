@@ -1,0 +1,28 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-15 01:02-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Tobias Kunze\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: local/pretalx-csv-export/pretalx_csv_export/__init__.py:10
+msgid "CSV exports for pretalx"
+msgstr ""
+
+#: local/pretalx-csv-export/pretalx_csv_export/__init__.py:12
+msgid "Exports in CSV and related formats for pretalx"
+msgstr ""
+
+#: local/pretalx-csv-export/pretalx_csv_export/signals.py:13
+msgid "CSV export"
+msgstr ""
+
+#: local/pretalx-csv-export/pretalx_csv_export/templates/pretalx_csv_export/settings.html:7
+msgid "CSV export settings"
+msgstr ""
