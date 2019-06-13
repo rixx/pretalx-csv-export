@@ -20,9 +20,17 @@ class CSVExporter(BaseExporter):
 
         for submission in submissions:
             row = [
-                submission.code, submission.title, submission.abstract, submission.description,
-                submission.display_speaker_names, submission.state,
+                submission.code,
+                submission.title,
+                submission.abstract,
+                submission.description,
+                submission.display_speaker_names,
+                submission.state,
             ]
             writer.writerow(row)
 
-        return f'{self.event.slug}-submissions.csv', 'text/csv', output.getvalue().encode('utf-8')
+        return (
+            f'{self.event.slug}-submissions.csv',
+            'text/csv',
+            output.getvalue().encode('utf-8'),
+        )
