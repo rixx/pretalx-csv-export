@@ -29,7 +29,7 @@ setup(
     long_description=long_description,
     url='https://github.com/pretalx/pretalx-csv-export',
     author='Tobias Kunze',
-    author_email='rixx@cutebit.de',
+    author_email='r@rixx.de',
     license='Apache Software License',
     install_requires=[],
     packages=find_packages(exclude=['tests', 'tests.*']),
