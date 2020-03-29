@@ -1,5 +1,5 @@
 from django.apps import AppConfig
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext_lazy
 
 
 class PluginApp(AppConfig):
@@ -7,9 +7,9 @@ class PluginApp(AppConfig):
     verbose_name = 'CSV exports for pretalx'
 
     class PretalxPluginMeta:
-        name = ugettext_lazy('CSV exports for pretalx')
+        name = gettext_lazy('CSV exports for pretalx')
         author = 'Tobias Kunze'
-        description = ugettext_lazy('Exports in CSV and related formats for pretalx')
+        description = gettext_lazy('Exports in CSV and related formats for pretalx')
         visible = True
         version = '0.0.0'
 
