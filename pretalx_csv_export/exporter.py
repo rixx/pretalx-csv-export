@@ -9,6 +9,7 @@ class CSVExporter(BaseExporter):
     verbose_name = 'CSV'
     icon = '","'
     public = False
+    cors = "*"
 
     def render(self, **kwargs):
         output = io.StringIO()
