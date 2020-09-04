@@ -1,4 +1,5 @@
 from django.views.generic import TemplateView
+
 from pretalx.common.mixins.views import PermissionRequired
 
 
