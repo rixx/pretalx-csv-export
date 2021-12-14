@@ -5,18 +5,18 @@ from pretalx.common.exporter import BaseExporter
 
 
 class CSVExporter(BaseExporter):
-    identifier = 'pretalx-csv-exporter'
-    verbose_name = 'CSV'
+    identifier = "pretalx-csv-exporter"
+    verbose_name = "CSV"
     icon = '","'
     public = False
     cors = "*"
 
     def render(self, **kwargs):
         output = io.StringIO()
-        writer = csv.writer(output, quoting=csv.QUOTE_NONNUMERIC, delimiter=',')
+        writer = csv.writer(output, quoting=csv.QUOTE_NONNUMERIC, delimiter=",")
         submissions = list(self.event.submissions.all())
 
-        headers = ['Code', 'Title', 'Abstract', 'Description', 'Speakers', 'State']
+        headers = ["Code", "Title", "Abstract", "Description", "Speakers", "State"]
         writer.writerow(headers)
 
         for submission in submissions:
@@ -31,7 +31,7 @@ class CSVExporter(BaseExporter):
             writer.writerow(row)
 
         return (
-            f'{self.event.slug}-submissions.csv',
-            'text/csv',
-            output.getvalue().encode('utf-8'),
+            f"{self.event.slug}-submissions.csv",
+            "text/csv",
+            output.getvalue().encode("utf-8"),
         )

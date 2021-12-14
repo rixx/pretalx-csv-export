@@ -4,13 +4,13 @@ from . import views
 
 urlpatterns = [
     re_path(
-        r'^orga/event/(?P<event>[^/]+)/plugins/csv_settings',
+        r"^orga/event/(?P<event>[^/]+)/plugins/csv_settings",
         views.SettingsView.as_view(),
-        name='settings',
+        name="settings",
     ),
     re_path(
-        r'^orga/event/(?P<event>[^/]+)/plugins/export.csv',
+        r"^orga/event/(?P<event>[^/]+)/plugins/export.csv",
         views.ExportView.as_view(),
-        name='export',
+        name="export",
     ),
 ]
