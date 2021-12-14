@@ -1,6 +1,8 @@
 CSV exports for pretalx
 ==========================
 
+**This plugin is deprecated, as pretalx itself now supports CSV exports.**
+
 This is a plugin for `pretalx`_. 
 
 Development setup
