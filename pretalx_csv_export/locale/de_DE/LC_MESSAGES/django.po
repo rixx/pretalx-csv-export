@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-04 10:11+0000\n"
+"POT-Creation-Date: 2021-10-26 13:05+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Tobias Kunze\n"
 "Language-Team: \n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: local/pretalx-csv-export/pretalx_csv_export/__init__.py:10
+#: local/pretalx-csv-export/pretalx_csv_export/apps.py:10
 msgid "CSV exports for pretalx"
 msgstr ""
 
-#: local/pretalx-csv-export/pretalx_csv_export/__init__.py:12
+#: local/pretalx-csv-export/pretalx_csv_export/apps.py:12
 msgid "Exports in CSV and related formats for pretalx"
 msgstr ""
 
